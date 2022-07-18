@@ -39,10 +39,22 @@
 
 .nav-link:hover{
     background-color: #fff;
-    border-radius: 10%;
+    border-radius: 5%;
     transform: scale(1.2);
     transition: ease-in;
 }
+
+.shop{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.shop:hover{
+    background-color: #1500ff;
+    color: #fff;
+}
+
 /*---- fin nav-bar----*/
 /* ---- inicio hero ---- */
 .hero-section{
@@ -233,4 +245,11 @@ footer a:hover{
     }
 }
 
+
+/* SHOP */
+
+.products{
+    position: relative;
+    margin-top: 100px;
+}
 
