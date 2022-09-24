@@ -13,6 +13,10 @@
     margin: auto;
 }
 
+header{
+    z-index: 1000;
+}
+
 .navbar-brand{
     color: #fff;
     text-transform: uppercase;
@@ -53,6 +57,7 @@
 .shop:hover{
     background-color: #1500ff;
     color: #fff;
+    transform: none;
 }
 
 /*---- fin nav-bar----*/
@@ -193,6 +198,7 @@ figure{
 /* ---- inicio footer ----*/
 footer{
     background-color: #111;
+    width: 100%;
 }
 
 .contacto{
@@ -222,6 +228,7 @@ footer a:hover{
     color: #fff;
 }  
 .form-control{
+    color: #fff;
     border: none;
     background-color: #111;
     border-radius: 0;
@@ -250,6 +257,104 @@ footer a:hover{
 
 .products{
     position: relative;
-    margin-top: 100px;
+    margin-top: 0px;
+    
 }
 
+
+/* CARRITO */
+.alert {
+    z-index: 100;
+}
+
+.hide, .remove{
+    display: none;
+}
+.carrito{
+    width: 100%;
+    /* min-height: 100vh; */
+    margin: auto;
+   overflow-x: hidden;
+    
+}
+
+
+
+.table__productos{
+    display: flex;
+    
+}
+
+.table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.descuento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50%;
+    margin: auto;
+}
+
+.img-descuento{
+    width: 300px;
+}
+ .descuento-titulo{
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
+   
+    
+
+ .btn-shop{
+    background-color: #d70101;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+ }
+
+ .btn-compra{
+    background-color: green;
+ }
+
+ .btn-compra:hover{
+    background-color: rgb(1, 90, 1);
+    color: #fff;
+ }
+
+ /* BUSCADOR */
+ .filtro{
+    display: none;
+} 
+
+#buscador {
+    width: 100%;
+    border: 1px solid #11048b;
+    background-color: #12048b34;
+    padding: 10px;
+}
+
+#buscador:focus{
+    outline: 1px solid #1500ff;
+    border-radius: 5px;
+}
